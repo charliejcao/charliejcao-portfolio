@@ -1,2 +1,2 @@
-# charliejcao-portfolio
+# charliejcao-react
 Charlie J. Cao's Portfolio
