@@ -1,0 +1,314 @@
+@import '~normalize.css/normalize.css';
+@import '~@fortawesome/fontawesome-free/css/fontawesome.min.css';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+@import 'Home.css';
+@import 'Projects.css';
+@import 'footer.css';
+  
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  font-family: 'Inconsolata', monospace;
+  color: #494c4e;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  border: 8px solid #494c4e;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 1.5em;
+}
+
+h4 {
+  font-size: 1.35em;
+  line-height: 1em;
+  margin-bottom: 1.25em;
+  color: #F6AC00;
+}
+
+h5 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+li {
+  margin-bottom: 1.5em;
+  padding-bottom: 2em;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 1.5em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f0eeee;
+}
+
+a {
+  color: #494c4e;
+  text-decoration: none;
+  margin-bottom: 1.25em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:hover {
+  opacity: 0.4;
+}
+
+nav {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.outer-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.outer-container::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.inner-container {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inner-container::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.inner-container, .outer-container {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.nav-right {
+  padding-top: 1.5em;
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .nav-right {
+    display: none;
+  }
+}
+
+.list-item {
+  font-size: 1.5em;
+  line-height: 1em;
+  float: left;
+  margin-left: 2em;
+  list-style: none;
+}
+.list-item a {
+  font-size: 1em;
+  color: #494c4e;
+  text-decoration: none;
+}
+.list-item a:hover {
+  border-bottom: 2px solid #F6AC00;
+  opacity: 1;
+}
+
+.site-logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: visible;
+  border: 5px solid #494c4e;
+  position: relative;
+  transform:rotate(0deg);
+  transition: transform .4s ease-in-out;
+}
+
+.site-logo .logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform .4s ease-in-out;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.site-logo:hover {
+  opacity: 1;
+  transform: rotate(-90deg);
+  transition: transform .4s ease-in-out;
+}
+.site-logo:hover .logo-text {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center;
+}
+.site-logo:hover #logo-stroke {
+  transform: rotate(-90deg);
+  transform-origin: center center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.mobile-nav {
+  display: none;
+  float: right;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-nav {
+    display: inline-block;
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  text-align: left;
+}
+.dropdown-menu li {
+  list-style: none;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  padding-left: 10px;
+}
+
+.mobile-menu-toggle {
+  float: right;
+}
+
+.navigation-toggle {
+  width: 30px;
+  height: 40px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.85em;
+}
+
+.navigation-toggle-label {
+  font-family: 'franklin-gothic-urw-cond', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #494c4e;
+  text-align: center;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  left: -60px;
+  bottom: 12px;
+}
+
+.navigation-toggle-icon {
+  border-bottom: 4px solid #494c4e;
+  padding-top: 12px;
+  display: block;
+}
+.navigation-toggle-icon:before,
+.navigation-toggle-icon:after {
+  border-top: 4px solid #494c4e;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.navigation-toggle-icon:before {
+  top: 2px;
+}
+.navigation-toggle-icon:after {
+  bottom: 14px;
+}
+
+/*
+ * This is where all the animation happens
+ */
+.navigation-toggle-icon,
+.navigation-toggle-icon:before,
+.navigation-toggle-icon:after {
+  transition-property: transform, border-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.5, -0.5, 0.5, 1.5);
+}
+
+.navigation-toggle-icon {
+  transition-delay: 0.125s;
+}
+.navigation-toggle-icon:before, 
+.navigation-toggle-icon:after {
+  transition-delay: 0s;
+  transform-origin: center;
+}
+
+.navigation-target {
+  display: none;
+}
+.navigation-target.clicked + .navigation-toggle .navigation-toggle-icon {
+  transition-delay: 0s;
+}
+.navigation-target.clicked + .navigation-toggle .navigation-toggle-icon:before,
+.navigation-target.clicked + .navigation-toggle .navigation-toggle-icon:after {
+  transition-delay: 0.125s;
+}
+.navigation-target.clicked + .navigation-toggle .navigation-toggle-icon:before {
+  transform: translateY(10px) rotate(135deg);
+}
+.navigation-target.clicked + .navigation-toggle .navigation-toggle-icon {
+  border-color: transparent;
+}
+.navigation-target.clicked + .navigation-toggle .navigation-toggle-icon:after {
+  transform: translateY(-10px) rotate(-135deg);
+}
+
+.hero {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.no-bullet {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-padding-start: 0px;
+}
+.no-bullet li {
+  list-style: none;
+}
+.no-bullet li:last-child {
+  border-bottom: 0px;
+}

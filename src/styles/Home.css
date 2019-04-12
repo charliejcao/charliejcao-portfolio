@@ -1,0 +1,12 @@
+.about a {
+    color: #F6AC00;
+}
+
+h3, h4 {
+    font-family: 'franklin-gothic-urw-cond', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.space-bottom {
+    margin-bottom: 4em;
+}
