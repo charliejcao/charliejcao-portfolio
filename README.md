@@ -1,4 +1,4 @@
-Welcome to Charlie J. Cao's portfolio! 
+# Welcome to Charlie J. Cao's portfolio! 
 
 [Live demo is http://www.charliejcao.com]
 
