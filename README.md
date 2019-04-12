@@ -2,7 +2,7 @@ Welcome to Charlie J. Cao's portfolio! Live demo is http://www.charliejcao.com
 
 This portfolio project is built with "Create React App".
 
-## Available Scripts
+## Scripts
 
 You can run:
 
