@@ -5,9 +5,6 @@ Live demo is http://www.charliejcao.com
 
 (This portfolio project is built with "Create React App".)
 
-
-You can run:
-
 ### `npm install` and `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
