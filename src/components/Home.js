@@ -21,8 +21,9 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <section className="inner-container hero">
-                    <h1>Hello, my name is Jiran 'Charlie' Cao, a web developer living in Weehawken, New Jersey. </h1>
+                <section className="inner-container hero" style={{textAlign: 'center'}}>
+                    <h1 style={{margin: 3}}>Jiran "Charlie" Cao</h1>
+                    <h2 style={{fontWeight: "normal"}}>WEB DEVELOPER</h2>
                 </section>
     
                 <HomeSlider />
@@ -30,22 +31,23 @@ class Home extends React.Component {
                 <section className="inner-container space-bottom">
     
                     <h3>About:</h3>
-                    <p className="about">I am currently working as a web developer at <a href="https://www.healthplan.com/" 
-                        target="_blank" rel="noopener noreferrer">HealthPlan Services, Inc.</a>, which is where my passion for design and development converge. See my previous work history on <a href="https://www.linkedin.com/profile/view?id=99755347" 
-                        target="_blank" rel="noopener noreferrer">LinkedIn</a>. In spare time I like singing, and having a coffee while enjoying riverview of New York City.
+                    <p className="about">
+                        <span>As a web developer in Greater New York Area, I'm passionate about my work.</span>
+                        <span>I always have the goal to build user-friendly apps that have the interactions with users, which I enjoy a lot.</span>
+                        <span>Because of my passion for things about “User Experiences”, I always like to build a mindset that web development and design could converge.</span>
+                        <span>What excites me a lot is to work on my personal web applications in spare time.</span>
                     </p>
-    
+                    <br/><br/>
                     <h3>Skills:</h3>
-                    
-                    <h4>TECHNOLOGIES</h4>
-                    <p>Using HTML5, CSS3, Javascript(ES6), Ajax, Sass, Git, TFS, Webpack, etc.</p>
-    
-                    <h4>FRAMEWORK / LIBRARY</h4>
-                    <p>Bootstrap, jQuery, ReactJS, AngularJS 1.X, ASP.NET MVC, etc.</p>
-    
-                    <h4>TOOLS / ENVIRONMENT</h4>
-                    <p>IntelliJ, Visual Studio Code, Visual Studio, SQL Server 2012, MySQL, Photoshop (mockup), Linux, etc.</p>
-    
+                    <p>
+                        <span style={{color: '#F6AC00'}}>PROGRAMMING LANGUAGES: </span>
+                        Javascript (including ES6), React, jQuery, HTML, CSS, ASP.NET C#, Java, etc.
+                    </p>
+                    <br/>
+                    <p>
+                        <span style={{color: '#F6AC00'}}>TOOLS / LIBRARIES: </span>
+                        IntelliJ, Visual Studio, Eclipse, SQL Server, MySQL, Git, TFS, Bootstrap, etc.
+                    </p>
                 </section>
             </div>
         );

@@ -2,6 +2,11 @@
     color: #F6AC00;
 }
 
+.about span {
+    display: block;
+    margin-bottom: 1em;
+}
+
 h3, h4 {
     font-family: 'franklin-gothic-urw-cond', Arial, sans-serif;
     font-weight: 700;

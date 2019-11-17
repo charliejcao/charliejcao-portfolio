@@ -1,5 +1,4 @@
 @import '~normalize.css/normalize.css';
-@import '~@fortawesome/fontawesome-free/css/fontawesome.min.css';
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
@@ -107,7 +106,7 @@ nav {
 }
 
 .inner-container {
-  max-width: 80em;
+  max-width: 110em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -125,7 +124,6 @@ nav {
 .nav-right {
   padding-top: 1.5em;
   float: right;
-  display: inline-block;
   vertical-align: middle;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -142,13 +140,21 @@ nav {
   list-style: none;
 }
 .list-item a {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #494c4e;
   text-decoration: none;
 }
 .list-item a:hover {
   border-bottom: 2px solid #F6AC00;
   opacity: 1;
+}
+
+.list-item-icon a:hover {
+  border-bottom: 0 solid;
+}
+
+.list-item-icon .fa-2x {
+  margin-top: -0.3em;
 }
 
 .site-logo {
@@ -297,8 +303,8 @@ nav {
 }
 
 .hero {
-  padding-top: 6em;
-  padding-bottom: 6em;
+  /* padding-top: 3em; */
+  padding-bottom: 3em;
 }
 
 .no-bullet {
